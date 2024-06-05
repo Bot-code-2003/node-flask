@@ -1,0 +1,1 @@
+joblib.dump(model, 'salary_prediction_model.pkl')

@@ -8,7 +8,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:1000/predict", {
+      const response = await axios.post("http://localhost:5000/predict", {
         years_experience: parseFloat(yearsExperience),
       });
       setPredictedSalary(response.data.prediction);
